@@ -1,0 +1,95 @@
+.header {
+  position: relative;
+}
+.header__logo {
+  height: 10rem;
+  text-align: center;
+  position: relative;
+  &-img {
+    width: 28rem;
+    @include absolutePosition("both");
+  }
+}
+.header__content {
+  z-index: 2;
+  position: absolute;
+  @include size(100%, 12rem);
+  @include flexBox(flex, space-between, center, row);
+  & > div {
+    width: 50%;
+    border-top: thin solid $primary-color;
+    border-bottom: thin solid $primary-color;
+    @include flexBox(flex, center, center, column);
+  }
+  &-left {
+    height: 100%;
+    background-color: $primary-color;
+    span {
+      font-size: 6rem;
+      font-weight: 600;
+      color: $secondary-color;
+    }
+  }
+  &-right {
+    color: $primary-color;
+    @include flexBox(column);
+    text-transform: uppercase;
+    background-color: $secondary-color;
+    .occasion {
+      font-size: 3.8rem;
+    }
+    .header-sale {
+      font-size: 6rem;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+}
+.header__banner {
+  &-swiper {
+    position: relative;
+    height: calc(100vh - 10rem);
+  }
+  &-img {
+    @include size(100%);
+    object-fit: cover;
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: $primary-color;
+}
+@include tablet {
+}
+@include mobile {
+  .header__logo {
+    height: 7rem;
+    &-img {
+      width: 16rem;
+    }
+  }
+  .header__content {
+    height: 7.8rem;
+    &-left {
+      span {
+        font-size: $font-size3;
+      }
+    }
+    &-right {
+      height: 100%;
+      .occasion {
+        font-size: 2rem;
+      }
+      .header-sale {
+        font-size: $font-size3;
+      }
+    }
+  }
+  .header__banner {
+    &-swiper {
+      height: 40rem;
+    }
+    &-img {
+      width: 100%;
+    }
+  }
+}

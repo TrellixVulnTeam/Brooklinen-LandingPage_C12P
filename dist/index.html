@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+    <title>brooklinen</title>
+  </head>
+  <body>
+    <div class="wapper">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="./images/logo.png"
+            alt="brooklinen"
+            class="header__logo-img"
+          />
+        </div>
+        <div class="header__content">
+          <div class="header__content-left">
+            <span>OFF 50%</span>
+          </div>
+          <div class="header__content-right">
+            <span class="occasion">Mid Autumn</span>
+            <p class="header-sale">Sale</p>
+          </div>
+        </div>
+        <div class="header__banner">
+          <div class="swiper header__banner-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="header__banner-img"
+                  src="./images/banner-1.jpg"
+                  alt="Banner"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="header__banner-img"
+                  src="./images/banner-2.jpg"
+                  alt="Banner"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="header__banner-img"
+                  src="./images/banner-3.jpg"
+                  alt="Banner"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="header__banner-img"
+                  src="./images/banner-4.jpg"
+                  alt="Banner"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="header__banner-img"
+                  src="./images/banner-5.jpg"
+                  alt="Banner"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </header>
+      <!-- MAIN -->
+      <main class="main">
+        <div class="container">
+          <ul class="sale__collection">
+            <li class="sale__collection-item">
+              <div class="sale__info">
+                <div class="sale__info-left">
+                  <h3 class="sale__info-title">
+                    Bộ sưu tập <br />
+                    ga giường 2021
+                  </h3>
+                </div>
+                <div class="sale__info-right">
+                  <span class="sale__info-desc">Sale</span>
+                  <h2 class="sale__info-percent">30%</h2>
+                </div>
+              </div>
+              <div class="sale__img">
+                <img src="./images/sale-collection-1.jpg" alt="" />
+              </div>
+            </li>
+            <li class="sale__collection-item">
+              <div class="sale__img">
+                <img src="./images/sale-collection-2.jpg" alt="" />
+              </div>
+              <div class="sale__info">
+                <div class="sale__info-left">
+                  <h3 class="sale__info-title">
+                    Bộ sưu tập <br />
+                    vỏ gối cotton
+                  </h3>
+                </div>
+                <div class="sale__info-right">
+                  <span class="sale__info-desc">Sale</span>
+                  <h2 class="sale__info-percent">20%</h2>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <!-- SIGN UP FORM -->
+      <section class="sign-up-form">
+        <div class="container">
+          <h1>
+            Đăng ký thông tin <span>-</span><br />
+            Nhận ngay Voucher xịn!
+          </h1>
+          <p>
+            Từ nay đến 21.09.2021, khi đăng ký thông tin bạn sẽ được nhận ngay
+            <strong>Combo Voucher</strong> giảm giá đến <strong>50%</strong>
+          </p>
+          <form class="form" action="">
+            <div class="form-content">
+              <div class="form-field">
+                <input type="text" name="" placeholder=" " class="form-input" />
+                <label for="name" class="form-label">Họ và tên</label>
+              </div>
+              <div class="form-field">
+                <input
+                  type="email"
+                  name=""
+                  placeholder=" "
+                  class="form-input"
+                />
+                <label for="email" class="form-label">Email</label>
+              </div>
+              <div class="form-field">
+                <input type="tel" name="" placeholder=" " class="form-input" />
+                <label for="phonenumber" class="form-label"
+                  >Số điện thoại</label
+                >
+              </div>
+              <button class="sign-up-btn">ĐĂNG KÝ NGAY</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-info">
+              <div class="footer-logo">
+                <img
+                  src="./images/logo.png"
+                  alt="brooklinen"
+                  class="footer-logo-img"
+                />
+              </div>
+              <div class="footer-contact">
+                <i class="far fa-envelope"></i>
+                <a class="footer-contact-detail" href="mailto:hello@brooklinen.com"
+                  >hello@brooklinen.com</a
+                >
+              </div>
+              <div class="footer-contact">
+                <i class="fas fa-phone-alt"></i>
+                <a class="footer-contact-detail" href="tel:028 6313 485">028 6313 485</a>
+              </div>
+              <div class="footer-socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="footer-store">
+              <img src="./images/store.jpeg" alt="store" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

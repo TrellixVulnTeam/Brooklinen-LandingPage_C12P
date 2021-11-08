@@ -1,0 +1,87 @@
+.footer {
+  border-top: thin solid $primary-color;
+  padding: 4rem 6rem;
+  &-content {
+    @include flexBox(flex, space-between, stretch, row);
+  }
+  &-logo {
+    width: 25rem;
+    margin-bottom: $distance1;
+  }
+  &-contact {
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    i {
+      font-size: 2.5rem;
+    }
+    &-detail {
+      color: $primary-color;
+      margin-left: 1rem;
+    }
+  }
+  &-socials {
+    margin-top: 7rem;
+    cursor: pointer;
+    a {
+      color: $primary-color;
+      i {
+        font-size: 2.5rem;
+        margin-right: 1rem;
+        margin-left: -0.4rem;
+        padding: 0.4rem;
+      }
+    }
+  }
+  &-store {
+    width: 50%;
+    img {
+      height: 100%;
+      max-height: 100%;
+    }
+  }
+}
+@include tablet {
+  .footer {
+    &-store {
+      img {
+        @include size(100%);
+      }
+    }
+    &-contact {
+      i {
+        font-size: $font-size2;
+      }
+    }
+    &-socials {
+      margin-top: 2rem;
+      a i {
+        padding: 0;
+        font-size: $font-size2;
+      }
+    }
+  }
+}
+@include mobile {
+  .footer {
+    padding: $distance1 $distance2;
+    &-info {
+      margin-bottom: $distance1;
+    }
+    &-logo {
+      width: 16rem;
+      margin-bottom: $distance1;
+    }
+    &-contact {
+      &-detail {
+        font-size: $font-size1;
+      }
+    }
+    &-socials {
+      margin-top: $distance1;
+    }
+    &-store {
+      width: 100%;
+    }
+  }
+}

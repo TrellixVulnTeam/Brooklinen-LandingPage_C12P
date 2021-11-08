@@ -1,0 +1,29 @@
+$primary-color: #154073;
+$secondary-color: #fafafa;
+$background-color: #f0f5f8;
+$wrapper: 1920px;
+$container: 1200px;
+$distance1: 3.2rem;
+$distance2: 1.6rem;
+$font-size1: 1.6rem;
+$font-size2: 2.4rem;
+$font-size3: 3.2rem;
+
+// RESPONSIVE
+$tablet-width: 768px;
+$desktop-width: 992px;
+@mixin mobile {
+  @media screen and (max-width: $tablet-width - 1px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: $desktop-width) {
+    @content;
+  }
+}
+@mixin highResolution {
+  @media screen and (min-width: $container + 1px) {
+    @content;
+  }
+}

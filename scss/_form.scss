@@ -1,0 +1,127 @@
+// SIGN UP FORM
+.sign-up-form {
+  padding: 0 $distance2;
+  margin-top: 6rem;
+  text-align: center;
+  h1 {
+    color: $primary-color;
+    margin: 0 0 $distance2;
+    font-size: 4.8rem;
+    font-weight: 400;
+    br {
+      display: none;
+    }
+  }
+}
+.form {
+  padding-bottom: 6rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  &-content {
+    width: 60rem;
+  }
+  &-field {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+  }
+  &-input {
+    @include size(100%, 6rem);
+    border: thin solid $primary-color;
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 0 $distance1;
+    font-size: 2rem;
+    color: $primary-color;
+    margin-bottom: $distance1;
+    background-color: transparent;
+    transition: border-color 0.25s ease;
+    &:focus {
+      border-color: darken($primary-color, 9);
+    }
+  }
+  &-label {
+    position: absolute;
+    line-height: 6rem;
+    margin-bottom: 0;
+    left: calc(3.2rem + 1px);
+    user-select: none;
+    pointer-events: none;
+    transition: transform 0.25s ease;
+  }
+}
+.form-input:not(:placeholder-shown) + .form-label,
+.form-input:focus + .form-label {
+  padding: 0 0.8rem;
+  transform: translateY(-50%);
+  left: calc(3.2rem + 1px - 8px);
+  display: inline-block;
+  line-height: 1;
+  font-weight: 500;
+  background-color: $background-color;
+}
+.sign-up-btn {
+  @include size(100%, 4rem);
+  cursor: pointer;
+  border: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  color: $secondary-color;
+  background-color: $primary-color;
+  transition: opacity 0.25s ease;
+  &:hover {
+    opacity: 0.95;
+  }
+}
+@include tablet {
+  .sign-up-form {
+    h1 {
+      font-size: 4rem;
+    }
+    p {
+      text-align: left;
+      line-height: 1.6;
+    }
+  }
+}
+@include mobile {
+  .sign-up-form {
+    margin-top: 4rem;
+    h1 {
+      font-size: $font-size3;
+      text-align: left;
+      line-height: 1.2;
+      span {
+        display: none;
+      }
+      br {
+        display: block;
+      }
+    }
+    p {
+      font-size: $font-size1;
+      margin-bottom: 0;
+    }
+  }
+  .form {
+    --label-height: 5rem;
+    padding-bottom: 4rem;
+    margin-top: $distance2;
+    &-input {
+      height: var(--label-height);
+      padding: 0 $distance2;
+    }
+    &-label {
+      line-height: var(--label-height);
+      font-size: 1.4rem;
+      left: calc(1.7rem + 1px);
+    }
+    .form-input:not(:placeholder-shown) + .form-label,
+    .form-input:focus + .form-label {
+      left: calc(1.7rem + 1px - 8px);
+    }
+  }
+}
